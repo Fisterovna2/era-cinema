@@ -1,88 +1,34 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Макет кинотеатра «Эра» | Юрга</title>
+    <title>Макет кинотеатра «Эра» | Проектная работа</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background: #2c3e50;
-            color: #ffffff;
-            padding: 3rem 1rem;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        header h1 { margin: 0; font-size: 2.5rem; letter-spacing: 1px; }
-        header p { margin: 10px 0 0; font-size: 1.2rem; opacity: 0.8; }
-        .container {
-            max-width: 800px;
-            margin: -2rem auto 2rem;
-            padding: 0 20px;
-            position: relative;
-        }
-        .card {
-            background: #ffffff;
-            border-radius: 10px;
-            padding: 25px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        .card h2 { 
-            border-bottom: 3px solid #3498db; 
-            padding-bottom: 10px; 
-            color: #2c3e50; 
-            margin-top: 0;
-        }
-        .team { 
-            display: flex; 
-            gap: 10px; 
-            flex-wrap: wrap; 
-            margin-top: 15px; 
-        }
-        .team span { 
-            background: #3498db; 
-            color: white; 
-            padding: 8px 16px; 
-            border-radius: 20px; 
-            font-size: 0.95rem;
-            font-weight: 600;
-        }
-        .img-placeholder { 
-            width: 100%; 
-            height: 250px; 
-            background: #e0e0e0; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            border-radius: 8px; 
-            color: #666; 
-            font-style: italic; 
-            margin-bottom: 20px;
-            border: 2px dashed #bbb;
-        }
-        /* Если захочешь вставить реальное фото, удали .img-placeholder и раскомментируй img ниже */
-        img.real-photo {
-            width: 100%;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; line-height: 1.6; }
+        header { background: #1a252f; color: #ffffff; padding: 3rem 1rem; text-align: center; }
+        header h1 { margin: 0; font-size: 2.5rem; }
+        header p { margin: 10px 0 0; font-size: 1.2rem; color: #bdc3c7; }
+        .container { max-width: 800px; margin: -2rem auto 2rem; padding: 0 20px; }
+        .card { background: #ffffff; border-radius: 10px; padding: 30px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .card h2 { border-left: 4px solid #3498db; padding-left: 15px; color: #2c3e50; margin-top: 0; }
+        .team { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }
+        .team span { background: #ecf0f1; color: #2c3e50; padding: 8px 16px; border-radius: 20px; font-weight: 600; border: 1px solid #bdc3c7; }
+        .img-placeholder { width: 100%; height: 250px; background: #e0e0e0; display: flex; align-items: center; justify-content: center; border-radius: 8px; color: #666; font-style: italic; margin-bottom: 20px; border: 2px dashed #bbb; }
+        .fact-list { list-style-type: none; padding: 0; }
+        .fact-list li { margin-bottom: 15px; padding-left: 30px; position: relative; }
+        .fact-list li::before { content: '🎬'; position: absolute; left: 0; top: 0; }
+        .stage-list { list-style-type: none; padding: 0; }
+        .stage-list li { margin-bottom: 15px; padding-left: 30px; position: relative; }
+        .stage-list li::before { content: '✓'; position: absolute; left: 0; top: 0; color: #27ae60; font-weight: bold; font-size: 1.2rem; }
+        .highlight { color: #3498db; font-weight: bold; }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Кинотеатр «Эра»</h1>
-        <p>Архитектурный макет • г. Юрга</p>
+        <p>Архитектурный макет здания • г. Юрга</p>
     </header>
 
     <div class="container">
@@ -90,21 +36,37 @@
         <div class="card">
             <h2>О проекте</h2>
             <!-- Заглушка для фото. Когда будет фото макета, загрузи его в репозиторий как photo.jpg 
-                 и замени этот div на: <img src="photo.jpg" alt="Макет кинотеатра" class="real-photo"> -->
-            <div class="img-placeholder">[Место для финального фото макета]</div>
-            
-            <p>Перед вами детализированный архитектурный макет исторического здания кинотеатра «Эра». Проект направлен на сохранение истории города и изучение особенностей градостроительства прошлого века.</p>
+                 и замени этот div на: <img src="photo.jpg" alt="Макет кинотеатра" style="width: 100%; border-radius: 8px; margin-bottom: 20px;"> -->
+            <div class="img-placeholder">[Здесь будет финальное фото готового макета]</div>
+            <p>Перед вами детализированный архитектурный макет здания кинотеатра «Эра». Наш проект направлен на изучение архитектуры города Юрги и создание точной уменьшенной копии одного из самых знаковых культурных объектов города.</p>
         </div>
 
         <div class="card">
-            <h2>История здания</h2>
-            <p>Торжественное открытие кинотеатра состоялось <strong>31 января 1971 года</strong>. Это был первый широкоформатный кинотеатр в Юрге. Первым фильмом, который увидели зрители, стала американская лента «Большой приз».</p>
-            <p>В 2000 году кинотеатр пережил масштабную реконструкцию, а в 2018 году открылся второй зал. «Эра» до сих пор остается важнейшим культурным центром города.</p>
+            <h2>Как создавался макет</h2>
+            <p>Мы проделали большую командную работу. Процесс был разделен на несколько ключевых этапов:</p>
+            <ul class="stage-list">
+                <li><strong>Подготовка:</strong> Изучение исторических фотографий здания «Эры», расчет пропорций и масштаба.</li>
+                <li><strong>Материалы:</strong> Подготовка плотного картона, специального клея, инструментов и акриловых красок.</li>
+                <li><strong>Сборка конструкции:</strong> Выстраивание основного объемного каркаса здания, кропотливое вырезание всех оконных и дверных проемов, монтаж крыши.</li>
+                <li><strong>Финальная отделка:</strong> Покраска, детализация элементов и нанесение финальных штрихов для максимального сходства с оригиналом.</li>
+            </ul>
         </div>
 
         <div class="card">
-            <h2>Авторы макета</h2>
-            <p>Ученики 8 «Б» класса, Гимназия г. Юрга:</p>
+            <h2>Интересные факты о кинотеатре «Эра»</h2>
+            <p>Здание кинотеатра имеет богатую историю и до сих пор играет важную роль в жизни юргинцев:</p>
+            <ul class="fact-list">
+                <li><span class="highlight">Первый в городе:</span> Торжественное открытие «Эры» состоялось <strong>31 января 1971 года</strong>. Это был самый первый широкоформатный кинотеатр в Юрге.</li>
+                <li><span class="highlight">Премьерный показ:</span> Самым первым фильмом, который показали зрителям на огромном экране, стала американская лента об автогонщиках «Большой приз» (Grand Prix).</li>
+                <li><span class="highlight">Масштабная реконструкция:</span> В 2000 году была произведена полная реконструкция кинозала и фойе здания, что вдохнуло в кинотеатр новую жизнь.</li>
+                <li><span class="highlight">Современные залы:</span> Сегодня Большой зал кинотеатра вмещает 175 зрителей (для удобства там даже установлены 30 диванов), а уютный Малый зал рассчитан на 45 мест.</li>
+                <li><span class="highlight">Культурный центр:</span> Много лет здесь демонстрируются не только фильмы, но и проводятся городские кинофестивали, выставки, конкурсы и творческие встречи.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Авторы работы</h2>
+            <p>Макет выполнили ученики 8 «Б» класса (Гимназия г. Юрга):</p>
             <div class="team">
                 <span>Жигалов Роман</span>
                 <span>Константин Шушин</span>
